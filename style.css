@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.search-form input,
+.search-form button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.search-form input {
+    flex: 1;
+    padding-right: 0;
+}
+
+.search-form button {
+    padding-left: 1rem;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+}
+
+.search-form button:hover {
+    background-color: #444;
+}
+
+.dictionary-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: #2f2f2f;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.property {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.property-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 150px; /* Adjust the width as needed */
+}
+
+.property-value {
+    flex: 1;
+}
